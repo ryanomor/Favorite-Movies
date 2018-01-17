@@ -1,0 +1,19 @@
+{
+  "name": "react-router-2-favorite-movies",
+  "description": "Create a website of your favorite movies. The page must include a navbar with at least two links: Home and Movies. The movies page will show a list of all your favorite movies, with the name and a year for each one. When a movie is clicked, show a page with more information about it: include at least the director, some of the main actors, an image of the movie, and a link to an external website like IMDB.\n\nAdd a genre property for each movie, which a string. Add a navbar link to a Genres page. On that page, put a select element with all the genres from all the movies. When a genre gets selected, display a list of Links to all the movies of that genre.",
+  "version": "0.0.216",
+  "dependencies": {
+    "react-router-dom": "4.2.2",
+    "react-dom": "16.0.0",
+    "react": "16.0.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
