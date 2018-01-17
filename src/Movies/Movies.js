@@ -50,7 +50,6 @@ class Movies extends React.Component {
     // movie ? <Movie movie={movie} /> : <div> Movie was not found </div>;  
   };
 
-<<<<<<< HEAD
   handleClick = () => {
     this.setState({
       selectedRating: "",
@@ -61,11 +60,6 @@ class Movies extends React.Component {
   renderMovieList = () => {
     const movieList = MoviesAPI.fetchAll();
     return <MovieList movies={movieList} handleClick={this.handleClick} />
-=======
-  renderMovieList = () => {
-    const movieList = MoviesAPI.fetchAll();
-    return <MovieList movies={movieList} />
->>>>>>> 2cbe71a91084828a65ec110843851e70e3c59363
   }
 
   handleRating = (event) => {
