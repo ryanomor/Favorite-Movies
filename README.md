@@ -1,4 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
  Navigate to a list of some of my favorite movies by clicking the Movies link 
  
