@@ -4,4 +4,4 @@
  
  Sort through movies by genre by clicking the Genre link 
  
- Sort through movies by the Ratings by clicking the Ratings link. You'll have to rate # the movie first ;)
+ Sort through movies by the Ratings by clicking the Ratings link. You'll have to rate the movie first ;)
