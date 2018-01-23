@@ -19,11 +19,51 @@
     work correctly both with client-side routing and a non-root public URL.
     Learn how to configure a non-root public URL by running `npm run build`.
   -->
-  <title>FavMovs App</title>
+  <title>React Movies App</title>
   
 </head>
 <body>
-  <div id="root"></div>
+  <html>
+  <head>
+    <style>
+      body {
+        background-color: #1A2739;
+      }
+      #root {
+        background-color: #B8DBF2;
+        border-radius: 0.25em;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .links {
+		    padding: 1em;
+        text-decoration: none;
+        color: black;
+      }
+      .links:hover {
+        background-color: #FFBC67;
+        color: #1A2739;
+      }
+      .liStyle {
+		    list-style: none;
+        width: 15em; 
+        margin: 0 auto; 
+        border-radius: 0.5em; 
+        background-color: #91AAB4;
+		    padding: 1em; 
+        margin-bottom: 1em;
+      }
+      .liStyle:hover {
+		    background-color: #FFBC67;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
   <!--
     This HTML file is a template.
     If you open it directly in the browser, you will see an empty page.

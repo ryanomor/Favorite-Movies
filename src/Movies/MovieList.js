@@ -1,27 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-<<<<<<< HEAD
+const imgStyle = {
+  width: "20%", 
+  float: "left", 
+  paddingRight: "0.5em",
+};
+
 const MovieList = ({ movies, genre, handleClick }) => {
-=======
-const MovieList = ({ movies, genre }) => {
->>>>>>> 2cbe71a91084828a65ec110843851e70e3c59363
   return (
     <div>
       <h3> Movie List: {genre}</h3>
       {movies.map((movie, idx) => 
-<<<<<<< HEAD
-        <li key={idx} onClick={handleClick} > 
-=======
-        <li key={idx}>
->>>>>>> 2cbe71a91084828a65ec110843851e70e3c59363
+        <li className="liStyle" key={idx} onClick={handleClick} > 
           {genre 
             ? <Link to={`/movies/genres/${genre.toLowerCase()}/${movie.id}`}>
-                {movie.name}, ({movie.year})
-              </Link>
+                <img style={imgStyle} src={movie.img} /> {" "}
+                  {movie.name}, ({movie.year})
+                <div style={{ clear: "left" }}></div>
+              </Link> 
             : <Link to={`/movies/list/${movie.id}`}>
-                {movie.name}, ({movie.year})
-            </Link>}
+                <img style={imgStyle} src={movie.img} /> {" "}
+                  {movie.name}, ({movie.year})
+                <div style={{clear: "left"}}></div>
+              </Link>
+            }
         </li>
       )}
     </div>

@@ -88,9 +88,13 @@ class Movies extends React.Component {
         />
         <ul>
         {currList.map(movie => (
-          <Link to={`/movies/list/${movie.id}`}>
-            <li>{movie.name}, ({movie.year})</li>
-          </Link>)
+          <li className="liStyle">
+            <Link to={`/movies/list/${movie.id}`}>
+                <img style={{width: "20%", float: "left", paddingRight: "0.5em"}} src={movie.img} /> {" "}
+              {movie.name}, ({movie.year}) {" "}
+              <div style={{ clear: "left" }}></div>
+            </Link>
+          </li>)
         )}
         </ul>
       </div>

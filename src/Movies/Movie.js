@@ -4,13 +4,19 @@ import { Link } from 'react-router-dom';
 const styles = {
   float: "left",
   paddingRight: "2em",
-  width: "30%",
+  width: "40%",
+};
+
+const movieStyle = {
+  textAlign: "left",
+  margin: "1em",
+  marginBottom: "1.5em",
 };
 
 const Movie = ({ movie, ratings, handleSelect, usersRating, genre, ratingList }) => {
   const numberRating = ratings.indexOf(usersRating) + 1;
   return (
-    <div>
+    <div style={movieStyle}>
       <h3>{movie.name}, {movie.year}</h3>
       <img style={styles} src={movie.img} />
       <p> Actors: {movie.actors.join(", ")}</p>
