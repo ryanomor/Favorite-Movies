@@ -40,6 +40,7 @@ const Movie = ({ movie, ratings, handleSelect, usersRating, genre, ratingList })
         : ratingList.length > 0 
           ? <Link to='/movies/ratings'>Back</Link>
           : <Link to='/movies'>Back</Link>}
+      <div style={{clear: "left"}}></div>
     </div>
   );
 };
