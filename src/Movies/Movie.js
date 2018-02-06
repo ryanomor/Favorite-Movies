@@ -26,7 +26,7 @@ const Movie = ({ movie, ratings, handleSelect, usersRating, genre, ratingList })
       {movie.genres.length > 1 
         ? <p>Genres: {movie.genres.join(", ")}</p>
         : <p>Genre: {movie.genres.join("")}</p>}
-      <p><a href={movie.imdb}>{movie.name}'s IMDB</a></p>
+      <p><a href={movie.imdb} target="_blank">{movie.name}'s IMDB</a></p>
       <p>Rate {movie.name}:{" "}
         <select id={movie.id} value={usersRating} onChange={handleSelect}>
           {["", ...ratings].map((rating, idx) => 
